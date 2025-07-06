@@ -20,39 +20,65 @@ This project is an automated checkout bot for [Stanley1913](https://www.stanley1
 - Mac, Windows, or Linux  
 - Chrome (Puppeteer uses Chromium automatically)
 
-Install dependencies:
+### Install Dependencies
 
+```bash
 npm install puppeteer-extra puppeteer-extra-plugin-stealth
+```
 
-1. Clone the repository (or create your file)
+---
+
+## 🚀 Usage
+
+### 1. Clone the Repository (or create your file)
+
+```bash
 git clone https://github.com/yourusername/stanley-bot.git
 cd stanley-bot
+```
 
-2. Create your bot file
-Paste your code into a file like checkoutBot.js.
+### 2. Create Your Bot File
 
-3. Run the bot
+Paste your code into a file like `checkoutBot.js`.
+
+### 3. Run the Bot
+
+```bash
 node checkoutBot.js
-⚠️ Make sure the product URL and variant ID inside the script are accurate.
+```
 
-📦 Script Flow
-Launches Puppeteer with stealth mode
-Navigates to product URL
-Extracts required form data
-Sends a custom fetch() POST to Shopify’s /cart/add
-Goes to checkout page and fills shipping form
-Types card details inside Shopify iframes
-Completes checkout
+> ⚠️ Make sure the product URL and variant ID inside the script are accurate.
 
-📝 Customization
+---
+
+## 📦 Script Flow
+
+1. Launches Puppeteer with stealth mode  
+2. Navigates to product URL  
+3. Extracts required form data  
+4. Sends a custom `fetch()` POST to Shopify’s `/cart/add`  
+5. Goes to checkout page and fills shipping form  
+6. Types card details inside Shopify iframes  
+7. Completes checkout  
+
+---
+
+## 📝 Customization
+
 You can update the following in the script:
-URL: change to the Stanley product you want to buy
-Shipping fields (name, email, address, phone)
-Card details (currently set to dummy test values for Stripe: 4242 4242 4242 4242)
 
-❗ Disclaimer
-This project is for educational purposes only. Use responsibly. You are responsible for how you use this code.
+- `URL`: change to the Stanley product you want to buy  
+- Shipping fields (name, email, address, phone)  
+- Card details (currently set to dummy test values for Stripe: `4242 4242 4242 4242`)  
 
-📄 License
+---
+
+## ❗ Disclaimer
+
+This project is for **educational purposes only**. Use responsibly. You are responsible for how you use this code.
+
+---
+
+## 📄 License
+
 MIT License
-Let me know if you want this formatted for a public repo with images, badges, or multiple file structure support.
